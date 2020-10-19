@@ -1,2 +1,1 @@
-# Jogo da Velha
- 
+# Jogo da Velha feito na linguagem C
