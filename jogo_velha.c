@@ -1,9 +1,7 @@
 // JOGO DA VELHA //
 
-/*
+/**
  * @author Wellington Santos - WSantos79
- *
- * CÛdigo 1.0
  */
 
 #include <stdio.h>
@@ -36,7 +34,7 @@ int main() {
 		fflush(stdout);
 		scanf("%d", &opc);
 		if (opc != 1 && opc != 2) {
-			printf("OpÁ„o inv·lida!");
+			printf("Op√ß√£o inv√°lida!");
 		}
 
 	} while (opc != 1 && opc != 2);
@@ -266,12 +264,12 @@ int main() {
 			if (casa_jogada < 1 || casa_jogada > 9) {
 				casa_jogada = 0;
 				printf(
-						"Jogada inv·lida, a casa n„o existe, tente novamente !\n");
+						"Jogada inv√°lida, a casa n√£o existe, tente novamente !\n");
 				system("pause");
 			} else if (casas[casa_jogada - 1] != ' ') {
 				casa_jogada = 0;
 				printf(
-						"Jogada inv·lida, a casa j· est· ocupada, tente novamente !\n");
+						"Jogada inv√°lida, a casa j√° est√° ocupada, tente novamente !\n");
 				system("pause");
 			} else {
 				if (vez % 2 == 0) {
@@ -362,7 +360,7 @@ int main() {
 			scanf("%s", &resposta);
 			resposta = tolower(resposta);
 			if (resposta != 's' && resposta != 'n') {
-				printf("Resposta inv·lida !\n");
+				printf("Resposta inv√°lida !\n");
 			}
 		}
 
@@ -370,14 +368,14 @@ int main() {
 
 	if (placar_j1 > placar_j2) {
 		vencedor = 1;
-		printf("\nParabÈns ao vencedor o Jogador%d !!!\n", vencedor);
+		printf("\nParab√©ns ao vencedor o Jogador%d !!!\n", vencedor);
 
 	} else if (placar_j2 > placar_j1) {
 		vencedor = 2;
-		printf("\nParabÈns ao vencedor o Jogador%d !!!\n", vencedor);
+		printf("\nParab√©ns ao vencedor o Jogador%d !!!\n", vencedor);
 
 	} else {
-		printf("\nParabÈns aos dois jogadores, terminou empatado !!!\n");
+		printf("\nParab√©ns aos dois jogadores, terminou empatado !!!\n");
 
 	}
 
